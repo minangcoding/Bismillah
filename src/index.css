@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+/* Kita masukkan font dan warna dasar di sini */
+@theme {
+  --font-arabic: "Amiri", serif;
+  --font-sans: "Inter", sans-serif;
+  --color-dark: #020617;
+  --color-emerald-custom: #10b981;
+  --color-gold-custom: #fbbf24;
+}
+
+@layer base {
+  body {
+    background-color: var(--color-dark);
+    color: #f1f5f9; /* slate-100 */
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+.font-quran {
+  font-family: var(--font-arabic);
+  line-height: 2.5;
+}
